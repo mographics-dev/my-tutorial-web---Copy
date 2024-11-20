@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: white;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .service {
+            flex: 2;
+            margin: 10px;
+            padding: 20px;
+            background-image: url(Premium.jpeg);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .txt-head {
+            color: white;
+            margin: 5px;
+        }
+
+        .txt-head h2 {
+            text-align: center;
+        }
+        .down-btn{
+            
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color:green;">
+    <div class="container">
+
+
+        <div class="service">
+            <div class="txt-head">
+                <h2>Empower Your Kids With A
+                    Tech Skills This Holiday!</h2>
+                <p>register for our special summer computer class</p>
+            </div>
+            <div class="txt-head">
+                <p>Duration: 1 months</p>
+                <p>Age Range: 8-17</p>
+                <p> Price: 20,000</p>
+                <p>Offer Only Lasts This Summer Holiday!</p>
+                <div class="down-btn"><button>Enroll Now</button></div>
+            </div>
+            </div>
+           
+        <div class="service">
+            <div class="txt-head">
+                <h2>Empower Your Kids With A
+                    Tech Skills This Holiday!</h2>
+                <p>register for our special summer computer class</p>
+            </div>
+            <div class="txt-head">
+                <p>Duration: 1 months</p>
+                <p>Age Range: 8-17</p>
+                <p> Price: 20,000</p>
+                <p>Offer Only Lasts This Summer Holiday!</p>
+            </div>
+            <div ><button class="down-btn">Enroll Now</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

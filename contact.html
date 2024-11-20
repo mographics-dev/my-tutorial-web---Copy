@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<style>
+    .nav-body{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    .nav-body a {
+        text-decoration: none;
+        color: rgb(252, 234, 207);
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .nav-body a:hover {
+        color: rgb(126, 253, 75);
+    }
+.contact-container{
+    background-image:  linear-gradient(rgba(126, 118, 118, 0.5), rgba(230, 154, 67, 0.5));
+    background-repeat: no-repeat;
+    background: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.contact-form{
+     max-width: 600px;
+     width: 100%;
+     background-color:#fff;
+     padding: 20px;
+     border: 3px solid rgba(250, 172, 54);
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.contact-form h1{
+    margin-bottom:20px;
+    font-size: 2em;
+    color: #333;
+}
+.contact-form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+    .contact-form input,.contact-form textarea{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .contact-form input {
+        border: 3px solid rgba(250, 172, 54);
+        color: rgba(250, 172, 54);
+        padding: 15px;
+        font-size: 1em;
+        cursor: pointer;
+         
+    }
+    .contact-form input:hover{
+        background-color: rgb(212, 208, 208);
+        border: 3px solid rgba(250, 172, 54);
+    }
+    footer{
+        background-color: #333;
+        color: #0c0b0b;
+        text-align: center;
+        padding: 1em;
+        font-size:0.9em;
+    }
+    footer a{
+        color:#4CAF50;
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+    </style>
+<body>
+    <div class="hero-image">
+        <nav class="nav-body">
+            <a href="#" class="logo">MO</a>
+            <a href="#About us">About Us</a>
+            <a href="#">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    <section class="contact-container">
+        <form class="contact-form"  method="post">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="name">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <input type="submit" value="send message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mo Tech World. all reserved.</p>
+        <p><a href="#">Privacy Policy</a><a href="#">Terms of service</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hero section</title>
+</head>
+
+<style>
+    body,
+    html {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/Supercharge.jpeg);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+    }
+
+    .nav-body {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    .nav-body a {
+        text-decoration: none;
+        color: rgb(252, 234, 207);
+        padding: 5px;
+        font-weight: 600;
+    }
+
+    .nav-body a:hover {
+        color: rgb(126, 253, 75);
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text button {
+        border: none;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: rgb(250, 172, 54);
+    }
+
+    .hero-text button:hover {
+        background-color: rgb(253, 162, 26);
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .about-us h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        width: 30px;
+        height: 30px;
+        float: left;
+        padding: 10px;
+
+    }
+
+    .services-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .service {
+        flex: 0.2;
+        min-width: 250px;
+        max-width: 300px;
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(250, 172, 54);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .service h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .service p {
+        font-size: 1rem;
+        color: black;
+    }
+
+    .head {
+        color: white;
+    }
+
+    .Gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .gal-sec {
+        width: 50%;
+        height: 200px;
+        display: flex;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        padding: 20px;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border: 3px solid black;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: #333;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color:black;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form input {
+        border: 3px solid rgb(114, 113, 113);
+        color: rgb(17, 17, 16);
+        padding: 15px;
+        font-size: 1em;
+        cursor: pointer;
+
+    }
+
+    .contact-form input:hover {
+        border: 3px solid rgba(250, 172, 54);
+
+    }
+
+    footer {
+        background-color: #333;
+        color: #0c0b0b;
+        text-align: center;
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .about-us {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50vh;
+        gap: 20px;
+    }
+
+    .float-div {
+        float: left;
+    }
+
+    .float-div img {
+        padding-right: 0;
+        width: 400px;
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .float-para {
+        float: right;
+        text-align: center;
+        width: 30%;
+    }
+</style>
+
+<body>
+    <div class="hero-image">
+        <nav class="nav-body">
+            <a href="#" class="logo"><img class="logo-img" src="PSX_img.png" alt="logo">
+            </a>
+            <a href="#home"></a>
+            <a href="#about">About Us</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hero-text">
+            <h1 style="font-size: 50px;">MO_TECH WORLD</h1>
+            <p>And i'm a Graphics Designer</p>
+            <button  id="contact">Hire Me</button>
+        </div>
+    </div>
+    <header id="about" class="about-us">
+        <div class="float-div">
+            <img src="image/Supercharge.jpeg" alt=" kids">
+        </div>
+        <div class="float-para">
+            <h1> <a href="#">About us</a></h1>
+            <p><small>At MO_TECH WORLD, we are dedicated to delivering exctional services and innovative
+                    solution. with years of experience in the industry, our team is committed to providing solutions to
+                    some
+                    tech riddles tailored
+                    to meet the needs of the our diverse clientele.
+                </small></p>
+            <p>Founded on the principal of integrity and exellence, our mission is to drive success through creativity
+                and
+                collaboration.
+                we take pride in our work and continously strive to exceed expectation.
+            </p>
+        </div>
+    </header>
+    <section>
+        <h1>Gallery</h1>
+        <div class="Gallery">
+            <div class="gal-sec"><img src="image/inmortal-producciones.jpg" alt="inmotal"></div>
+            <div width="40%" height="400px" float="right" margin="10px" style="width:40%;">
+                <marquee direction="right">
+                    <img style="width: 200px; height: 200px;" src="image/pexels-ofspace.jpg" alt="ofspace">
+                </marquee>
+            </div>
+            <div class="gal-sec"><img src="image/pexels-ofspace.jpg" alt="ofspace"></div>
+            <div width="40%" height="400px" float="right" margin="10px" style="width:40%; ">
+                <p>some of our partnashipcs</p>
+            </div>
+            <div class="gal-sec"><img src="image/pexels-olly.jpg" alt="olly"></div>
+            <div class="gal-sec"><img src="image/pexels-thisisengineering.jpg" alt="pexels">
+            </div>
+            <div width="40%" height="400px" float="right" margin="10px" style="width:40%; ">
+                <marquee direction="right">
+                    <img style="width: 200px; height: 200px;" src="image/pexels-ofspace.jpg" alt="ofspace">
+                </marquee>
+            </div>
+        </div>
+    </section>
+    <section href="service.html" class="services-container" style="padding:20px;">
+        <div style="background-color:#f9f9f9; width: 100%; text-align: center;">
+            <h1> OUR SERVICES </h1>
+        </div>
+        <div id="service" class="service">
+            <h2 class="head">Web development</h2>
+            <p>We build responsive and high-perfomance websites tailored to your needs.
+                Our team uses the latest technology to ensure your online presence stands out.</p>
+        </div>
+        <div class="service">
+            <h2 class="head"> Mobile app development</h2>
+            <p> Our mobile app development services cover both iOS and android platforms.
+                We create user user-friendlyand feature-rich application that engage and retain users.</p>
+        </div>
+        <div class="service">
+            <h2 class="head">Cloud solution</h2>
+            <p> We provide scalable and secure cloud solution to help your business grow.
+                From cloud storage to complex infrastructure, we've you covered.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="contact-container">
+
+        <form class="contact-form" method="post">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="name">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <input type="submit" value="send message">
+        </form>
+    </section>
+
+    <footer>
+
+        <marquee>
+            <p style="color: white;">&copy; 2024 Mo Tech World. all reserved.</p>
+        </marquee>
+        <p><a href="#">Privacy Policy</a><a href="#">Terms of service</a></p>
+
+    </footer>
+</body>
+
+</html>

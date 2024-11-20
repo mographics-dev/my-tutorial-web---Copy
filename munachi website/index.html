@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fumigations-center</title>
+</head>
+<style>
+   .nav-bar {
+      background-color: black;
+      height: 50px;
+      padding-top: 10px;
+
+   }
+
+   .nav-bar a {
+      text-decoration: none;
+      font-size: large;
+      font-weight: 300;
+      color: goldenrod;
+      margin: 10px;
+   }
+
+   .logo-img {
+      width: 20px;
+      height: 20px;
+      float: left;
+      margin: 10px;
+   }
+
+   .hero-text {
+      text-align: center;
+   }
+
+   .hero-text button {
+      border: none;
+      padding: 10px 25px;
+      color: goldenrod;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color: black;
+   }
+
+   .hero-text button:hover {
+      background-color: goldenrod;
+      color: black;
+   }
+
+   .hero-image {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/fumi.jpeg);
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      color: white;
+   }
+
+   .about-us {
+      display: flex;
+      flex-wrap: wrap;
+
+   }
+
+   .about-us h1 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      text-align: center;
+   }
+
+   .about-us p {
+      font-size: 16px;
+      max-width: 800px;
+   }
+
+   .service-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      background-color: goldenrod;
+   }
+
+   .services {
+      flex: 1;
+      min-width: 300px;
+      max-width: 350px;
+      margin: 10px;
+      padding: 20px;
+      background-color: black;
+      box-shadow: 0 0 10px gold;
+      border-radius: 8px;
+      text-align: center;
+   }
+
+   .services h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-underline-position: below;
+
+   }
+
+   .services p {
+      font-size: 1rem;
+      color: white
+   }
+
+   .head {
+      color: goldenrod;
+   }
+
+   footer {
+      background-color: black;
+      color: goldenrod;
+   }
+
+   .policy {
+      text-align: center;
+      color: white;
+      padding: 10px;
+   }
+
+   .nav-bar a:hover {
+      color: white;
+   }
+
+   .float-div {
+      float: left;
+   }
+
+   .float-div img {
+      flex-wrap: wrap;
+      padding-right: 0;
+      width: 400px;
+      height: 300px;
+      border-radius: 5px;
+      margin: 20px;
+   }
+
+   .float-para {
+      float: left;
+      text-align: center;
+      width: 60%;
+      margin: auto;
+   }
+
+   .form {
+      text-align: center;
+      margin: 50px;
+      font-size: 30px;
+   }
+
+   .last {
+      color: goldenrod;
+   }
+
+   .name {
+      text-align: center;
+      color: goldenrod;
+      margin-top: 30px;
+      border-radius: 20px;
+      font-size: 20px;
+      height: 20px;
+      margin: 20px;
+
+   }
+
+   .female {
+      color: goldenrod;
+   }
+
+   .passport {
+      width: 30%;
+      color: gold;
+      font-size: 55px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 30px;
+   }
+
+   .type {
+      margin: 20px;
+      margin: auto;
+      height: 30px;
+   }
+
+   .main {
+      color: black;
+      font-size: 20px;
+   }
+
+   .btn {
+      width: 30%;
+      height: 40px;
+      border-radius: 20px;
+      padding: 10px;
+   }
+
+   .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      padding: 20px;
+   }
+
+   .name44 {
+      text-align: center;
+      font-size: 50px;
+   }
+
+   .btn:hover {
+      border: 2px solid blue;
+      background-color: rgba(255, 217, 0, 0.339);
+      margin: left;
+   }
+
+
+
+
+   .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+   }
+
+   .gallery-items {
+      position: relative;
+      margin: 15px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   .gallery-items img {
+      width: 100%;
+      height: 200px;
+      display: block;
+      width: 400px;
+      height: 400px;
+   }
+
+   .gallery-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+   }
+
+   .gallery-info h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+   }
+
+   .gallery-info p {
+      font-size: 16px;
+      margin: 0;
+   }
+
+
+   .contact-form {
+      max-width: 600px;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border: 3px solid #555;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   .contact-form:hover {
+      border: 2px solid blue;
+      background-color: rgba(255, 217, 0, 0.339);
+   }
+
+   .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      padding: 20px;
+   }
+
+   .contact-form {
+      max-width: 600px;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border: 3px solid #555;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   .contact-form input {
+      border: 3px solid rgb(114, 113, 113);
+      color: rgb(17, 17, 16);
+      padding: 15px;
+      font-size: 1em;
+      cursor: pointer;
+   }
+
+   .contact-form h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #333;
+   }
+
+   .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+   }
+
+   .contact-form input,
+   .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+   }
+</style>
+
+<body>
+   <nav class="nav-bar">
+
+      <a href="#"><img class="logo-img" src="image1/munachi.png" alt="mypics"></a>
+      <a href="#about">About-us</a>
+      <a href="#contact">Contact</a>
+      <a href="#gallery-section">Gallery</a>
+   </nav>
+   <div class="hero-image">
+      <div class="hero-text">
+         <h1 style="font-size:50px"><U>KRIS-LIKE FUMIGATIONS NIG.ENT</U></h1>
+         <button id="contact">Contact us </button>
+      </div>
+   </div>
+   <section id="about" class="about-us">
+      <div class="float-div">
+         <img src="image/56ad5c3d03ce8ba871484d75f2fca9bf.jpg" alt="kid">
+      </div>
+      <div class="float-para">
+         <h1><a href="#">About Us</a></h1>
+         <p>At Chris like fumigations we are dedicated to delivering exceptional and outstanding
+            services.with years of experience in our Company, our team is commited to render good and healthy
+            services.
+         </p>
+         <p>Kris Like Fumigations was found on the year 1999.
+            our collaboration is to end the manipulation of rodents accross the world
+         </p>
+      </div>
+   </section>
+   <section class="service-container">
+      <div style="background-color:white#f9f9f9; width:100%;text-align:center;">
+         <h1>OUR SERVICES</h1>
+      </div>
+      <div class="services">
+         <h2 class="head">our Fumigation development</h2>
+         <p>our fumigations services covers-both killing of harmful rodents(like rats,snakes and scropion) </p>
+      </div>
+      <div class="services">
+         <h2 class="head">farm solutions</h2>
+         <p>we provide stable solution to the pest controls in the world</p>
+      </div>
+   </section>
+   <section id="gallery-section" class="gallery-section">
+      <div class="gallery">
+         <div class="gallery-items">
+            <img src="image/fumigation1.jpeg" alt="Item 1">
+            <div class="image-tag"><h3>We fumigate the street</h3></div>
+         </div>
+         <div class="gallery-items">
+            <img src="image/fumigation2.jpeg" alt="Item 2">
+            <div class="image-tag"><h3>We fumigates hospitals and companies</h3></div>
+         </div>
+         <div class="gallery-items">
+            <img src="image/fumigation3.jpeg" alt="Item 3">
+            <div class="image-tag"><h3>We kill harmful rodents due to fumigation</h3> </div>
+         </div>
+         <div class="gallery-items">
+            <img src="image/fumagation4.jpeg" alt="Item 4">
+            <div class="image-tag"><h3>We fumigate farms</h3></div>
+         </div>
+         <div class="gallery-items">
+            <img src="image/fumigation5.jpeg" alt="Item 6">
+            <div class="image-tag"><h3>We fumigate your houses </h3></div>
+         </div>
+      </div>
+
+
+   </section>
+   <section id="contact" class="contact-container">
+      <form class="contact-form">
+         <h1>Contact Us</h1>
+         <input type="text" placeholder="enter your email"><br>
+         <input type="text" placeholder="enter your contact"><br>
+         <input type="text" placeholder="enter your address"><br>
+         <input type="text" placeholder="enter your last name">
+         <button style="margin:auto;" class="btn">Submit</button>
+      </form>
+   </section>
+   <footer>
+      <marquee behavior="move" direction="right">
+         <p>&copy; 2024 Chris Like Fumigations</p>
+      </marquee>
+      <p class="policy"><a href="#">Privacy Policy</a><a href="#">Terms of services</a></p>
+   </footer>
+</body>
+
+</html>

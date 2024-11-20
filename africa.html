@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-image: url(kidstech2.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contain-div {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 5%;
+            padding: 10px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        #exit-btn {
+            position: absolute;
+            border-radius: 50%;
+            right: -20px;
+            top: -20px;
+            height: 30px;
+            width: 30px;
+            background-color: rgba(0, 0, 0, 0.473);
+            border: none;
+            font-size: 20px !important;
+            font-weight: 100;
+            color: white;
+        }
+
+        #exit-btn:hover {
+            color: red;
+        }
+
+        .inner-con1,
+        .inner-con2 {
+            flex: 1;
+            margin: 20px;
+            background-image: url(Premium.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 300px;
+            transition: transform 0.3s ease;
+
+        }
+
+        .inner-con1:hover,
+        .inner-con2:hover {
+            transform: scale(1.05);
+        }
+
+        .inner-con2 {
+            background-image: url(AMafrica.png);
+        }
+
+        h2 {
+            color: white;
+            text-shadow: 1px 1px 2px rgb(252, 93, 93);
+        }
+
+        .text {
+            text-align: center;
+            color: white;
+            margin: 20px;
+        }
+
+        .txt-head {
+            color: white;
+        }
+
+
+
+        .bottom-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-btn {
+            background-color: white;
+            padding: 5px;
+            margin: 5px;
+            width: 50%;
+            height: 40px;
+            border: 2px solid green;
+            border-radius: 20px;
+            font-weight: bold;
+
+        }
+        .main-btn:hover {
+            color: white;
+            background-color: green;
+        }
+
+        @media screen and (max-width:500px)  {}
+    </style>
+</head>
+
+<body class="container">
+    <div class="contain-div" id="popup">
+        <button class="showvalue" id="exit-btn">X</button>
+        <div class="inner-con1">
+            <h2>Empower Your Kids With A
+                Tech Skills This Holiday!</h2>
+            <h4 class="text">register for our special summer computer class</h4>
+
+            <div class="txt-head">
+                <p><b>Duration:</b> 1 months</p>
+                <p><b>Age Range:</b> 8-17</p>
+                <p><b>Price:</b> 20,000</p>
+                <p>Offer Only Lasts This Summer Holiday!</p>
+                <div class="bottom-btn">
+                    <button class="main-btn">Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="inner-con2">
+            <h2>Empower Your Kids With A
+                Tech Skills This Holiday!</h2>
+            <h4 class="text">register for our special summer computer class</h3>
+
+                <div class="txt-head">
+                    <p><b>Duration:</b> 1 months</p>
+                    <p><b>Age Range:</b> 8-17</p>
+                    <p><b>Price:</b> 20,000</p>
+                    <p>Offer Only Lasts This Summer Holiday!</p>
+                    <div class="bottom-btn">
+                        <button class="main-btn">Enroll Now
+                        </button>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('exit-btn').onclick=function (){
+document.getElementById('popup').style.display='none';
+    }
+    </script>
+
+</body>
+
+</html>
